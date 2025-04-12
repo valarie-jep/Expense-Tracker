@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(255, 253, 253);
+  border: 50px solid rgb(32, 27, 32);
+  border-radius: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-top: 0px;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.expense-form {
+  background: rgb(255, 255, 255);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.expense-form h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.expense-form label {
+  display: block;
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.expense-form input,
+.expense-form textarea,
+.expense-form select {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-top: 0.25rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.expense-form button {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.6rem;
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.expense-form button:hover {
+  background: #333;
+}
+
+/* Table Styles */
+.expense-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 2px 6px 8px;
+}
+
+.expense-table th,
+.expense-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.expense-table thead {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.expense-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.expense-table button {
+  padding: 8px 10px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.expense-table button:hover {
+  background: darkred;
+}
+
+/* Search + Sort */
+.search-bar,
+.sort-controls {
+  margin-bottom: 50px;
+}
+
+.search-bar input,
+.sort-controls select {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid rgb(15, 9, 9);
+  box-shadow: 2px 6px 8px;
+}
