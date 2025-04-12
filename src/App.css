@@ -119,3 +119,69 @@ h1 {
   border: 1px solid rgb(15, 9, 9);
   box-shadow: 2px 6px 8px;
 }
+
+/* -----------------------------------
+   📱 Responsive Styles for Mobile
+   ----------------------------------- */
+@media (max-width: 768px) {
+  .App {
+    padding: 1rem;
+  }
+
+  body {
+    border-width: 10px;
+  }
+
+  .expense-form {
+    padding: 0.75rem;
+  }
+
+  .expense-form h2 {
+    font-size: 1.2rem;
+  }
+
+  .expense-form label {
+    font-size: 0.85rem;
+  }
+
+  .expense-form input,
+  .expense-form textarea,
+  .expense-form select {
+    font-size: 0.95rem;
+    padding: 0.4rem;
+  }
+
+  .expense-form button {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .search-bar input,
+  .sort-controls select {
+    width: 100%;
+    max-width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .expense-table {
+    font-size: 0.85rem;
+    overflow-x: auto;
+    display: block;
+  }
+
+  .expense-table table {
+    width: 100%;
+    min-width: 500px;
+  }
+
+  .expense-table th,
+  .expense-table td {
+    padding: 0.5rem;
+  }
+
+  .expense-table button {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
