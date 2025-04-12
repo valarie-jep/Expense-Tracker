@@ -124,9 +124,9 @@ h1 {
    📱 Responsive Styles for Mobile
    ----------------------------------- */
 @media (max-width: 768px) {
-  .App {
+  /* .App {
     padding: 1rem;
-  }
+  } */
 
   body {
     border-width: 10px;
