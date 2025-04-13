@@ -1,8 +1,8 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: rgb(31, 134, 6);
-  border: 30px solid rgb(32, 27, 32);
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(103, 190, 81);
+  border: 30px solid rgb(44, 40, 44);
   border-radius: 15px;
   height: auto;
   width: auto;
@@ -16,28 +16,15 @@ h1 {
 }
 
 .App {
-  max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding-left: 30%;
 }
 
 .expense-form {
   background: rgb(255, 255, 255);
-  padding: 1rem;
+  padding: 8px;
   border-radius: 8px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-}
-
-.expense-form h2 {
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
-}
-
-.expense-form label {
-  display: block;
-  margin-top: 0.75rem;
-  font-size: 0.9rem;
-  color: #555;
+  padding-right: 30px;
 }
 
 .expense-form input,
@@ -46,34 +33,54 @@ h1 {
   width: 100%;
   padding: 0.5rem;
   font-size: 1rem;
-  margin-top: 0.25rem;
-  border-radius: 4px;
-  border: 1px solid #ccc;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(17, 14, 14);
 }
 
 .expense-form button {
   margin-top: 1rem;
-  width: 100%;
+  width: 25%;
   padding: 0.6rem;
-  background: #000;
-  color: #fff;
+  background: lch(0% 0 0);
+  color: lch(100% 0.01 296.81);
   font-weight: bold;
   border: none;
-  border-radius: 4px;
+  border-radius: 16px;
   cursor: pointer;
+  margin-left: 40%;
 }
 
 .expense-form button:hover {
-  background: #333;
+  background: lch(61.01% 74.07 122.09);
 }
 
 /* Table Styles */
 .expense-table {
   width: 100%;
   border-collapse: collapse;
-  background: #fff;
+  background: rgb(255, 255, 255);
   border-radius: 8px;
   overflow: hidden;
+  box-shadow: 2px 6px 8px black;
+  color: black;
+}
+
+/* Search + Sort */
+.search-bar,
+.sort-controls {
+  margin-bottom: 50px;
+  font-size: larger;
+}
+
+.search-bar input,
+.sort-controls select {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid rgb(15, 9, 9);
   box-shadow: 2px 6px 8px;
 }
 
@@ -103,23 +110,6 @@ h1 {
 
 .expense-table button:hover {
   background: darkred;
-}
-
-/* Search + Sort */
-.search-bar,
-.sort-controls {
-  margin-bottom: 50px;
-}
-
-.search-bar input,
-.sort-controls select {
-  width: 100%;
-  max-width: 300px;
-  padding: 0.5rem;
-  font-size: 1rem;
-  border-radius: 10px;
-  border: 1px solid rgb(15, 9, 9);
-  box-shadow: 2px 6px 8px;
 }
 
 /* -----------------------------------
